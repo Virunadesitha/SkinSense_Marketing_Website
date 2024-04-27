@@ -1,0 +1,156 @@
+body {
+    overflow-x: hidden;
+    background-color: rgb(26, 26, 46);
+}
+
+.icon {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 4%;
+}
+
+.icon h1 {
+    color: rgb(211, 211, 228);
+    margin-top: 100px;
+    text-align: center;
+    font-size: 40pt;
+}
+
+#studentHeading {
+    color: #ffff;
+    font-size: 50px;
+    text-align: center;
+}
+
+.studentBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 275px; 
+    height: 375x;
+    border-radius: 20px;
+    border: 6px solid rgb(152, 7, 178);
+    margin-right: 20px; 
+}
+
+.studentNumber {
+    margin-left: 80px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-size: 25px;
+    font-weight: bold;
+    border-color: #b1aeae;
+    width: 130px;
+}
+
+.imageArea {
+    position: relative;
+    width: 250px;
+    height: 369px;
+    border-radius: 20px;
+}
+
+.studentLayer {
+    width: 0px;
+    height: 350px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    transition: 0.7s ease;
+    border-radius: 15px;
+}
+
+.studentDetails {
+    transition: .2s;
+    overflow: hidden;
+    width: 300px;
+    font-size: 20px;
+    background-color: rgba(178, 190, 181, 0.5);
+}
+
+.imageArea:hover .studentLayer {
+    width: 300px;
+}
+
+p {
+    color: white;
+}
+
+img {
+    border-radius: 15px;
+}
+
+#students {
+    margin-top: 100px;
+    width: auto; 
+    margin-right: auto;
+    margin-left: auto;
+    display: flex; 
+}
+
+.studentPhoto {
+    height: 369px;
+    width: 256px;
+}
+
+
+.studentBox .studentLayer {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Footer styles */
+.footer {
+    background-color: #1a1a2e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.logof img {
+    height: 50px;
+    width: 50px;
+}
+
+.logof span {
+    font-size: 20px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.credits {
+    margin-top: 20px;
+}
+
+.credits p {
+    margin: 5px 0;
+}
+
+.credits a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .studentBox {
+        width: 100%; 
+        margin-right: 0;
+    }
+
+    #students {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .studentPhoto {
+        width: 100%;
+        height: auto;
+    }
+}
